@@ -463,9 +463,8 @@ span.price {
   align-items: center;
   text-align: center;
   background: #333;
-  color:#333
-  margin-bottom: 200px;
-  padding: 200px;
+  color:#333;
+  padding: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -476,28 +475,10 @@ span.price {
   left: 0;
   min-width: 100vw;
   min-height: 100vh;
-  overflow: scroll;
+  overflow: hidden;
   
 }
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 .columns{
   column-count: 2;

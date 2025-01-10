@@ -541,13 +541,26 @@ span.price {
   font-weight: 500;
   font-style: normal;
   font-size: 15px;
+  margin-top: 4%;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .aboutheading3{
   font-family: 'DM Sans', serif;
   font-weight: 1000;
-  font-style: bold;
   font-size: 20px;
-  padding: 10px, 3%;
+  margin-left: 25px;
+  margin-right: 35px;
+}
+
+.aboutparagraph {
+  font-family: 'DM Sans', serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 
@@ -566,10 +579,23 @@ span.price {
 
 .about-video{
   display: flex;
-  max-height: 100%;
+  border-radius: 3%;
+  max-height: 50%;
   max-width: 100%;
   object-fit: fill;
+  margin-top: 3%;
 }
+
+.about-video2{
+  display: flex;
+  border-radius: 3%;
+  max-height: 50%;
+  max-width: 50%;
+  object-fit: fill;
+  margin-top: 3%;
+  align-self: center;
+}
+
 
 
 .hero {
@@ -581,7 +607,7 @@ span.price {
   text-align: center;
   color: white;
   padding: 0%;
-  height: 100vh;
+  height: 80vh;
   
   overflow: hidden;
 }
@@ -607,8 +633,11 @@ span.price {
 .aboutvideo{
   display: flex;
   position:relative;
-  box-sizing: border-box;
 
+}
+
+.about-text{
+  margin: 25%;
 }
 
 .columns{
@@ -617,6 +646,7 @@ span.price {
   margin-top: 30px;
   column-count: 2;
   align-items: center;
+  vertical-align: middle;
   text-align: center;
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -624,6 +654,23 @@ span.price {
   z-index: 1;
 }
 
+.grid-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.grid-item {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20%, 20%;
+  background-color: white;
+  text-align: center;
+}
 
 
 

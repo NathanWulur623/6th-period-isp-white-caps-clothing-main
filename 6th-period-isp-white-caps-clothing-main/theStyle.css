@@ -549,8 +549,8 @@ span.price {
   font-family: 'DM Sans', serif;
   font-weight: 1000;
   font-size: 20px;
-  margin-left: 25px;
-  margin-right: 35px;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .aboutparagraph {
@@ -583,16 +583,18 @@ span.price {
   max-height: 50%;
   max-width: 100%;
   object-fit: fill;
-  margin-top: 3%;
+  margin-top: 8%;
 }
 
 .about-video2{
   display: flex;
   border-radius: 3%;
-  max-height: 50%;
-  max-width: 50%;
+  max-height: 40%;
+  max-width: 100%;
   object-fit: fill;
-  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 8%;
+  margin-right: 8%;
   align-self: center;
 }
 
@@ -637,7 +639,7 @@ span.price {
 }
 
 .about-text{
-  margin: 25%;
+  margin-left: 8%;
 }
 
 .columns{
@@ -667,9 +669,11 @@ span.price {
   justify-content: center;
   align-content: center;
   align-items: center;
+  vertical-align: center;
   padding: 20%, 20%;
   background-color: white;
   text-align: center;
+  margin: 0 3%;
 }
 
 

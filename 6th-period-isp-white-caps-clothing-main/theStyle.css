@@ -598,8 +598,32 @@ span.price {
   align-self: center;
 }
 
+.mens-hero{
+  display: flex;
 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 0%;
+  height: 80vh;
+  overflow: hidden;
+}
 
+.mens-content{
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1% 1%;
+  border-radius: 4%;
+  font-family: 'DM sans', serif;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .hero {
   display: flex;
   justify-content: center;
@@ -620,7 +644,7 @@ span.price {
   height: 50vh;
   overflow: hidden;
   position: absolute;
-  z-index: -1;
+
   width: 100%;
   top: 50%;
   left: 50%;
@@ -682,9 +706,143 @@ span.price {
   max-width: 24rem;
   max-height: 5%;
   margin: 0 auto;
+  
+}
+@keyframes slider3{
+  0%{
+    transform: translateX(0);
+
+  }
+  10%{
+    transform: translateX(-100);
+    
+  }
+  20%{
+    transform: translateX(-200%);
+    
+  }
+  30%{
+    transform: translateX(-300%);
+    
+  }
+
+  40%{
+    transform: translateX(-400%);
+    
+  }
+
+  50%{
+    transform: translateX(-500%);
+  }
+
+  60%{
+    transform: translateX(-600);
+    
+  }
+  70%{
+    transform: translateX(-700%);
+    
+  }
+  80%{
+    transform: translateX(-800%);
+    
+  }
+
+  90%{
+    transform: translateX(-900%);
+    
+  }
+
+  100%{
+    transform: translateX(-1000%);
+  }
+}
+@keyframes slider2{
+  0%{
+    transform: translateX(0);
+
+  }
+  25%{
+    transform: translateX(-100);
+    
+  }
+  30%{
+    transform: translateX(-200%);
+    
+  }
+  50%{
+    transform: translateX(-300%);
+    
+  }
+  55%{
+    transform: translateX(-400%);
+    
+  }
+
+  65%{
+    transform: translateX(-500%);
+    
+  }
+
+  75%{
+    transform: translateX(-600%);
+    
+  }
+  85%{
+    transform: translateX(-700%);
+    
+  }
+
+  100%{
+    transform: translateX(-800%);
+    
+  }
 }
 
-.slider{
+@keyframes slider1 {
+  0%{
+    transform: translateX(0);
+
+  }
+  25%{
+    transform: translateX(-100);
+    
+  }
+  30%{
+    transform: translateX(-200%);
+    
+  }
+  50%{
+    transform: translateX(-300%);
+    
+  }
+  55%{
+    transform: translateX(-400%);
+    
+  }
+
+  65%{
+    transform: translateX(-500%);
+    
+  }
+
+  75%{
+    transform: translateX(-600%);
+    
+  }
+  85%{
+    transform: translateX(-700%);
+    
+  }
+
+  100%{
+    transform: translateX(-800%);
+    
+  }
+}
+
+
+.slider1, .slider2, .slider3{
   display:flex;
   aspect-ratio: 1 / 1;
   overflow-x: auto;
@@ -692,14 +850,16 @@ span.price {
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%, 0%, 0.25);
   border-radius: 0.5rem;
+  
 }
 
-.slider img{
+.slider1 img, .slider2 img, .slider3 img{
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
+  animation: slide 48s infinite;
 }
-.slider-nav{
+.--nav{
   display: flex;
   column-gap: 1rem;
   position: absolute;
